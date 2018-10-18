@@ -1,0 +1,257 @@
+
+
+/* Large desktops and laptops */
+@media all and (min-width: 1200px)and (max-width: 1599px) {
+    .work__list {
+        width: 95%;
+    }
+
+    .about__list,
+    .contact__list {
+        width: 80%;
+    }
+    .work__item {
+        margin: 5px;
+    }
+    .work__title {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .work__text {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .contact__text {
+        font-size: 35px;
+    }
+
+}
+
+/* Landscape tablets and medium desktops */
+@media all and (max-width: 1199px) {
+    .work__list {
+        width: 95%;
+        height: auto;
+    }
+    .about__list{
+        width: 100%;
+    }
+    .contact__list {
+        width: 100%;
+    }
+    .contact__text {
+        font-size: 30px;
+    }
+    .descp__title {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .work__item {
+        margin: 10px;
+    }
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section__title {
+        display: none;
+    }
+    .section__list {
+        width: 100%;
+        min-height: 50%;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media only screen and (max-width: 768px) {
+    .label-toggle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+        flex-direction:column;
+        cursor: pointer;
+        margin-left: auto;
+    }
+    .nav__list {
+        opacity: 0;
+        height: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        text-align: center;
+        -webkit-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+        width: 100%;
+        visibility: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background-color: #845ec2;
+        margin-top: 0;
+    }
+    .nav__item--home {
+        display: block;
+    }
+    .nav__link {
+        color: #fff;
+    }
+
+    #menu-toggle:checked ~ .nav__list {
+        opacity: 1;
+        height: 100vh;
+        visibility: visible;
+        z-index: 999;
+    }
+
+    .content-header__descp {
+        margin: auto;
+        width: 100%;
+        padding: 0;
+    }
+    .section__list {
+        width: 100%;
+        align-content: space-around;
+    }
+    .work__list {
+        height: auto;
+    }
+    .contact__text {
+        font-size: 30px;
+    }
+    .section__title {
+        display: none;
+    }
+
+
+    .contact__phone {
+        padding: 10px;
+    }
+}
+
+
+
+/* Portrait phones and smaller */
+@media only screen and (max-width: 480px) {
+    .label-toggle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+        flex-direction:column;
+        cursor: pointer;
+        margin-left: auto;
+    }
+    .nav__list {
+        opacity: 0;
+        height: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        text-align: center;
+        -webkit-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+        width: 100%;
+        visibility: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background-color: #845ec2;
+        margin-top: 0;
+    }
+    .nav__item--home {
+        display: block;
+    }
+    .nav__link {
+        color: #fff;
+    }
+
+    #menu-toggle:checked ~ .nav__list {
+        opacity: 1;
+        height: 100vh;
+        visibility: visible;
+        z-index: 999;
+    }
+    .header__inner {
+        width: 100%;
+    }
+    .content-header__img {
+        display: none;
+    }
+    .content-header__descp {
+        margin: auto;
+        width: 100%;
+        padding: 0;
+    }
+    .content-header__title {
+        font-size: 30px;
+    }
+    .section__title {
+        display: none;
+    }
+    .svg-text {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    .section__inner {
+
+        padding-top: 10px;
+    }
+    .section__list {
+        width: 100%;
+        align-content: space-around;
+    }
+    .section__item {
+        padding: 10px;
+        height: auto;
+    }
+    .section__item--img {
+        display: none;
+    }
+    .about__text {
+        margin-top: 10px;
+    }
+    .contact__phone {
+        padding: 10px;
+    }
+    .contact__text {
+        font-size: 25px;
+        margin-top: 25px;
+    }
+    .section__text--help-mobile {
+        display: block;
+    }
+    .section__text--help {
+        display: none;
+    }
+    .section__item:first-child{
+        -webkit-border-image: -webkit-gradient(linear, right top, left top, from(#845ec2), color-stop(#e65faa), color-stop(#ff8080), color-stop(#ffbb61), to(#f9f871)) 100% 10% 100% 10% / 1;
+        -webkit-border-image: -webkit-linear-gradient(right, #845ec2, #e65faa, #ff8080, #ffbb61, #f9f871) 100% 10% 100% 10% / 1;
+        -o-border-image: -o-linear-gradient(right, #845ec2, #e65faa, #ff8080, #ffbb61, #f9f871) 100% 10% 100% 10% / 1;
+        border-image: -webkit-gradient(linear, right top, left top, from(#845ec2), color-stop(#e65faa), color-stop(#ff8080), color-stop(#ffbb61), to(#f9f871)) 100% 10% 100% 10% / 1;
+        border-image: linear-gradient(to left, #845ec2, #e65faa, #ff8080, #ffbb61, #f9f871) 100% 10% 100% 10% / 1;
+
+        border-bottom: 1px solid;
+        border-right: 0;
+    }
+    .content-header__title span {
+
+        background: -webkit-linear-gradient(left, #845ec2, #e65faa, #ff8080, #ffbb61, #f9f871);
+        background: -o-linear-gradient(left, #845ec2, #e65faa, #ff8080, #ffbb61, #f9f871);
+        background: -webkit-gradient(linear, left top, right top, from(#845ec2), color-stop(#e65faa), color-stop(#ff8080), color-stop(#ffbb61), to(#f9f871));
+        background: linear-gradient(to right, #845ec2, #e65faa, #ff8080, #ffbb61, #f9f871);
+    }
+}
